@@ -27,8 +27,6 @@
 
 This repository is the official implementation of the ICCV 2023 paper "3D-VisTA: Pre-trained Transformer for 3D Vision and Text Alignment".
 
-We propose 3D-VisTA, a pre-trained Transformer for 3D Vision and Text Alignment that achieves SOTA performance on various 3D vision-language tasks.
-
 [Paper](https://3d-vista.github.io/paper.pdf) |
 [arXiv](https://arxiv.org/abs/2308.04352) |
 [Project](https://3d-vista.github.io/) |

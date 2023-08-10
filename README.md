@@ -18,12 +18,12 @@
     </a>
 </p>
 
-[Ziyu Zhu](), 
-[Xiaojian Ma](), 
-[Yixin Chen](),
-[Zhidong Deng]()📧,
-[Siyuan Huang]()📧,
-[Qing Li]()📧
+[Ziyu Zhu](https://zhuziyu-edward.github.io/), 
+[Xiaojian Ma](https://jeasinema.github.io/), 
+[Yixin Chen](https://yixchen.github.io/),
+[Zhidong Deng](https://www.cs.tsinghua.edu.cn/csen/info/1165/4052.htm)📧,
+[Siyuan Huang](https://siyuanhuang.com/)📧,
+[Qing Li](https://liqing-ustc.github.io/)📧
 
 This repository is the official implementation of the ICCV 2023 paper "3D-VisTA: Pre-trained Transformer for 3D Vision and Text Alignment".
 

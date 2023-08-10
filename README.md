@@ -36,7 +36,7 @@ We propose 3D-VisTA, a pre-trained Transformer for 3D Vision and Text Alignment 
 [Checkpoints](https://drive.google.com/drive/folders/1CKJER3CnVh0o8cwlN8a2c0kQ6HTEqvqj?usp=sharing)
 
 <div align=center>
-<img src='./figures/teaser.png' width=60%>
+<img src='https://3d-vista.github.io/file/overall.png' width=60%>
 </div>
 
 ## Abstract

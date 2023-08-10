@@ -1,7 +1,7 @@
 # 3D-VisTA: Pre-trained Transformer for 3D Vision and Text Alignment
 
 <p align="left">
-    <a href='https://3d-vista.github.io/paper.pdf'>
+    <a href='https://arxiv.org/pdf/2308.04352.pdf'>
       <img src='https://img.shields.io/badge/Paper-PDF-red?style=plastic&logo=adobeacrobatreader&logoColor=red' alt='Paper PDF'>
     </a>
     <a href='https://arxiv.org/abs/2308.04352'>
@@ -27,7 +27,7 @@
 
 This repository is the official implementation of the ICCV 2023 paper "3D-VisTA: Pre-trained Transformer for 3D Vision and Text Alignment".
 
-[Paper](https://3d-vista.github.io/paper.pdf) |
+[Paper](https://arxiv.org/pdf/2308.04352.pdf) |
 [arXiv](https://arxiv.org/abs/2308.04352) |
 [Project](https://3d-vista.github.io/) |
 [HuggingFace Demo](https://huggingface.co/spaces/SceneDiffuser/SceneDiffuserDemo) |

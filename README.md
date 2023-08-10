@@ -1,4 +1,4 @@
-# 3D-VisTA: Pre-trained Transformer for 3D Vision and Text Alignment
+## 3D-VisTA: Pre-trained Transformer for 3D Vision and Text Alignment
 
 <p align="left">
     <a href='https://3d-vista.github.io/paper.pdf'>

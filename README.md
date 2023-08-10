@@ -18,19 +18,19 @@
     </a>
 </p>
 
-[Ziyu Zhu]()
-[Xiaojian Ma]()
-[Yixin Chen]()     
-[Zhidong Deng]()📧     
-[Siyuan Huang]()📧
-[Qing Li]()📧    
+[Ziyu Zhu](), 
+[Xiaojian Ma](), 
+[Yixin Chen](),
+[Zhidong Deng]()📧,
+[Siyuan Huang]()📧,
+[Qing Li]()📧
 
 This repository is the official implementation of the ICCV 2023 paper "3D-VisTA: Pre-trained Transformer for 3D Vision and Text Alignment".
 
-We propose 3D-VisTA, a pre-trained Transformer for 3D Vision and Text Alignment that achieves state-of-the-art performance on various 3D vision-language tasks.
+We propose 3D-VisTA, a pre-trained Transformer for 3D Vision and Text Alignment that achieves SOTA performance on various 3D vision-language tasks.
 
 [Paper](https://3d-vista.github.io/paper.pdf) |
-[arXiv](https://arxiv.org/abs/2301.06015) |
+[arXiv](https://arxiv.org/abs/2308.04352) |
 [Project](https://3d-vista.github.io/) |
 [HuggingFace Demo](https://huggingface.co/spaces/SceneDiffuser/SceneDiffuserDemo) |
 [Checkpoints](https://drive.google.com/drive/folders/1CKJER3CnVh0o8cwlN8a2c0kQ6HTEqvqj?usp=sharing)

@@ -13,7 +13,7 @@
     <a href='https://huggingface.co/spaces/SceneDiffuser/SceneDiffuserDemo'>
       <img src='https://img.shields.io/badge/Demo-HuggingFace-yellow?style=plastic&logo=AirPlay%20Video&logoColor=yellow' alt='HuggingFace'>
     </a>
-    <a href='https://drive.google.com/drive/folders/1CKJER3CnVh0o8cwlN8a2c0kQ6HTEqvqj?usp=sharing'>
+    <a href='https://drive.google.com/drive/folders/1UZ5V9VbPCU-ikiyj6NI4LyMssblwr1LC?usp=share_link'>
       <img src='https://img.shields.io/badge/Model-Checkpoints-orange?style=plastic&logo=Google%20Drive&logoColor=orange' alt='Checkpoints'>
     </a>
 </p>
@@ -53,7 +53,7 @@ cd vision/pointnet2
 python3 setup.py install
 ```
 ### Prepare dataset
-1. Follow [Vil3dref](https://github.com/cshizhe/vil3dref) and download scannet data under data/scanfamily/scan_data, this folder should look like
+1. Follow [Vil3dref](https://github.com/cshizhe/vil3dref) and download scannet data under `data/scanfamily/scan_data`, this folder should look like
 ```
 ./data/scanfamily/scan_data/
 ├── instance_id_to_gmm_color
@@ -61,7 +61,7 @@ python3 setup.py install
 ├── instance_id_to_name
 └── pcd_with_global_alignment
 ```
-2. Download [scanrefer+referit3d](https://github.com/cshizhe/vil3dref), [scanqa](https://github.com/ATR-DBI/ScanQA), and [sqa3d](https://github.com/SilongYong/SQA3D), and put them under /data/scanfamily/annotations
+2. Download [scanrefer+referit3d](https://github.com/cshizhe/vil3dref), [scanqa](https://github.com/ATR-DBI/ScanQA), and [sqa3d](https://github.com/SilongYong/SQA3D), and put them under `/data/scanfamily/annotations`
 
 ```
 data/scanfamily/annotations/
@@ -95,7 +95,7 @@ data/scanfamily/annotations/
         ├── v1_balanced_sqa_annotations_train_scannetv2.json
         └── v1_balanced_sqa_annotations_val_scannetv2.json
 ```
-3. Download all checkpoints and put them under project/pretrain_weights
+3. Download all checkpoints and put them under `project/pretrain_weights`
 
 ### Run 3D-VisTA
 To run 3D-VisTA, use the following command, task includes scanrefer, scanqa, sr3d, nr3d, sqa, and scan2cap.

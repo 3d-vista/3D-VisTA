@@ -52,8 +52,71 @@ conda env create --name envname --file=environments.yml
 cd vision/pointnet2
 python3 setup.py install
 ```
+### Prepare dataset
+1. Follow [Vil3dref](https://github.com/cshizhe/vil3dref) and download scannet data under data/scanfamily/scan_data, this folder should look like
+```
+./data/scanfamily/scan_data/
+├── instance_id_to_gmm_color
+├── instance_id_to_loc
+├── instance_id_to_name
+└── pcd_with_global_alignment
+```
+2. Download [scanrefer+referit3d](https://github.com/cshizhe/vil3dref), [scanqa](https://github.com/ATR-DBI/ScanQA), and [sqa3d](https://github.com/SilongYong/SQA3D), and put them under /data/scanfamily/annotations
 
+```
+data/scanfamily/annotations/
+├── meta_data
+│   ├── cat2glove42b.json
+│   ├── scannetv2-labels.combined.tsv
+│   ├── scannetv2_raw_categories.json
+│   ├── scanrefer_corpus.pth
+│   └── scanrefer_vocab.pth
+├── qa
+│   ├── ScanQA_v1.0_test_w_obj.json
+│   ├── ScanQA_v1.0_test_wo_obj.json
+│   ├── ScanQA_v1.0_train.json
+│   └── ScanQA_v1.0_val.json
+├── refer
+│   ├── nr3d.jsonl
+│   ├── scanrefer.jsonl
+│   ├── sr3d+.jsonl
+│   └── sr3d.jsonl
+├── splits
+│   ├── scannetv2_test.txt
+│   ├── scannetv2_train.txt
+│   └── scannetv2_val.txt
+└── sqa_task
+    ├── answer_dict.json
+    └── balanced
+        ├── v1_balanced_questions_test_scannetv2.json
+        ├── v1_balanced_questions_train_scannetv2.json
+        ├── v1_balanced_questions_val_scannetv2.json
+        ├── v1_balanced_sqa_annotations_test_scannetv2.json
+        ├── v1_balanced_sqa_annotations_train_scannetv2.json
+        └── v1_balanced_sqa_annotations_val_scannetv2.json
+```
+3. Download all checkpoints and put them under project/pretrain_weights
+
+### Run 3D-VisTA
+To run 3D-VisTA, use the following command, task includes scanrefer, scanqa, sr3d, nr3d, sqa, and scan2cap.
+```
+python3 run.py --config project/vista/{task}_config.yml
+```
+
+### Acknowledgement
+We would like to thank the authors of [Vil3dref](https://github.com/cshizhe/vil3dref) and for their open-source release.
 
 ### News
 
 - [ 2023.08 ] First version!
+- [ 2023.09 ] We release codes for all downstream tasks.
+
+### Citation:
+```
+@article{zhu20233d,
+  title={3D-VisTA: Pre-trained Transformer for 3D Vision and Text Alignment},
+  author={Zhu, Ziyu and Ma, Xiaojian and Chen, Yixin and Deng, Zhidong and Huang, Siyuan and Li, Qing},
+  journal={arXiv preprint arXiv:2308.04352},
+  year={2023}
+}
+```

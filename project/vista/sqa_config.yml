@@ -1,0 +1,91 @@
+pipeline:
+  name: optimus_prime
+
+  task: sqa
+  eval_task: True
+  restore_model: True
+
+  qa_dataset:
+    name: sqa_task
+    args:
+      tokenizer: bert_tokenizer
+      txt_seq_length: 70
+      pc_seq_length: 40
+      pc_type: 'gt'
+
+  lang_encoder:
+    name: bert_lang_encoder
+    args:
+        num_hidden_layer: 4
+     
+  point_encoder:
+    name: point_tokenize_encoder
+    args:
+      backbone: pointnet++
+      hidden_size: 768
+      path: null
+      freeze_feature: True
+      num_attention_heads: 12
+      spatial_dim: 5
+      num_layers: 4
+      dim_loc: 6
+      pairwise_rel_type: center
+
+  unified_encoder:
+    name: unified_encoder_v2
+    args:
+      hidden_size: 768
+      num_attention_heads: 12
+      num_layers: 4
+      dim_loc: 6
+
+  ground_head:
+    name: ground_head_v1
+    args:
+      input_size: 768
+      hidden_size: 768
+      sem_cls_size: 607
+      dropout: 0.3
+
+  qa_head:
+    name: qa_head_v1
+    args:
+      num_answers: 706
+
+  pretrain_head:
+    name: pretrain_head_v1
+    args:
+      hidden_size: 768
+      vocab_size: 30522
+  
+  caption_head:
+    name: caption_head_v1
+    args:
+      hidden_size: 768
+      vocab_size: 4231
+  
+  qa_loss:
+    name: sqa_loss_v1
+  
+  logger:
+    name: tensorboard_logger
+    args:
+      log_dir: ../runs/
+  
+  saver:
+    name: model_saver
+    args:
+      save_name: model.pth
+      load_dir: project/pretrain_weights
+      load_name: sqa.pth
+
+  batch_size: 64
+  learning_rate: 1.0e-4
+  grad_norm: 10.0
+  epochs: 50
+  warmup_steps: 2000
+  lang_lr_mul: 0.1
+  point_lr_mul: 1.0
+  unified_lr_mul: 1.0
+  beta1: 0.9
+  beta2: 0.98

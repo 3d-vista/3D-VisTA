@@ -31,7 +31,7 @@ This repository is the official implementation of the ICCV 2023 paper "3D-VisTA:
 [arXiv](https://arxiv.org/abs/2308.04352) |
 [Project](https://3d-vista.github.io/) |
 [HuggingFace Demo](https://huggingface.co/spaces/SceneDiffuser/SceneDiffuserDemo) |
-[Checkpoints](https://drive.google.com/drive/folders/1CKJER3CnVh0o8cwlN8a2c0kQ6HTEqvqj?usp=sharing)
+[Checkpoints](https://drive.google.com/drive/folders/1UZ5V9VbPCU-ikiyj6NI4LyMssblwr1LC?usp=share_link)
 
 <div align=center>
 <img src='https://3d-vista.github.io/file/overall.png' width=60%>

@@ -96,6 +96,15 @@ data/scanfamily/annotations/
         └── v1_balanced_sqa_annotations_val_scannetv2.json
 ```
 3. Download all checkpoints and put them under `project/pretrain_weights`
+| Checkpoint           | Link                                                         | Note                                              |
+| :------------------- | ------------------------------------------------------------ | ------------------------------------------------- |
+| Pre-trained  | [link](https://drive.google.com/file/d/1x6xNDGjOZHAIj2GsxGzH3YUY4adZzal0/view?usp=sharing) | 3D-VisTA Pre-trained checkpoint.                  |
+| ScanRefer            | [link](https://drive.google.com/file/d/1jsAPjI4UoP0DZqnsVWrO3SQXXM9gxzz1/view?usp=share_link) | Fine-tuned ScanRefer from pre-trained checkpoint. |
+| ScanQA               | [link](https://drive.google.com/file/d/1AVfLISS8soTvaLmPdUHdWmirzIunLSi5/view?usp=share_link) | Fine-tined ScanQA from pre-trained checkpoint.    |
+| Sr3D                 | [link](https://drive.google.com/file/d/1KXcxr1YkAlrFQS8vEQMtuVruBgmjlOPn/view?usp=share_link) | Fine-tuned Sr3D from pre-trained checkpoint.      |
+| Nr3D                 | [link](https://drive.google.com/file/d/1lGg2o_r7cHJaTWa71-RTk-7141LAUCYj/view?usp=share_link) | Fine-tuned Nr3D from pre-trained checkpoint.      |
+| SQA                  | [link](https://drive.google.com/file/d/1gCnR6XRj8TwuqbEaHk8FwfLClj6qFDh7/view?usp=share_link) | Fine-tuned SQA from pre-trained checkpoint.       |
+| Scan2Cap             | [link](https://drive.google.com/file/d/1UF3zb7yIRsmJhM07A78eFxEptyNfF3k2/view?usp=share_link) | Fine-tuned Scan2Cap from pre-trained checkpoint.  |
 
 ### Run 3D-VisTA
 To run 3D-VisTA, use the following command, task includes scanrefer, scanqa, sr3d, nr3d, sqa, and scan2cap.

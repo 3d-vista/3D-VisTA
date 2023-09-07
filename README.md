@@ -44,7 +44,7 @@ This repository is the official implementation of the ICCV 2023 paper "3D-VisTA:
 ### Install
 1. Install conda package
 ```
-conda env create --name envname --file=environments.yml
+conda env create --name 3dvista --file=environments.yml
 ```
 
 2. install pointnet2

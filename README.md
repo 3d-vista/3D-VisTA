@@ -113,10 +113,10 @@ We would like to thank the authors of [Vil3dref](https://github.com/cshizhe/vil3
 
 ### Citation:
 ```
-@article{zhu20233d,
+@article{zhu2023vista,
   title={3D-VisTA: Pre-trained Transformer for 3D Vision and Text Alignment},
   author={Zhu, Ziyu and Ma, Xiaojian and Chen, Yixin and Deng, Zhidong and Huang, Siyuan and Li, Qing},
-  journal={arXiv preprint arXiv:2308.04352},
+  journal={ICCV},
   year={2023}
 }
 ```

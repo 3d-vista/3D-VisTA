@@ -216,7 +216,6 @@ dependencies:
     - platformdirs==3.7.0
     - plotly==5.15.0
     - plyfile==0.9
-    - pointnet2==3.0.0
     - prompt-toolkit==3.0.38
     - psutil==5.9.5
     - ptyprocess==0.7.0

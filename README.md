@@ -96,6 +96,7 @@ data/scanfamily/annotations/
         └── v1_balanced_sqa_annotations_val_scannetv2.json
 ```
 3. Download all checkpoints and put them under `project/pretrain_weights`
+
 | Checkpoint           | Link                                                         | Note                                              |
 | :------------------- | ------------------------------------------------------------ | ------------------------------------------------- |
 | Pre-trained  | [link](https://drive.google.com/file/d/1x6xNDGjOZHAIj2GsxGzH3YUY4adZzal0/view?usp=sharing) | 3D-VisTA Pre-trained checkpoint.                  |
